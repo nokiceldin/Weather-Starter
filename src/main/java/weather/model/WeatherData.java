@@ -1,4 +1,4 @@
 package weather.model;
 
-public record WeatherData(double temp, double percipitation, double humidity) {
+public record WeatherData(double temp, double precipitation, double humidity) {
 }
