@@ -22,4 +22,5 @@ public class WeatherCLI {
         System.out.println("Humidity: " + data.humidity());
         System.out.println("Wind Speed: " + data.precipitation());
     }
+    //ddd
 }
