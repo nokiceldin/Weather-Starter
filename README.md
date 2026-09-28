@@ -6,7 +6,7 @@ This Maven project contains the initial weather application to be refactored for
 
 - Java 25
 - Maven
-- JUnit Jupiter
+- JUnit Jupiterrrr
 
 ## Compile
 
