@@ -6,7 +6,7 @@ This Maven project contains the initial weather application to be refactored for
 
 - Java 25
 - Maven
-- JUnit Jupiterrrr
+- JUnit Jupiter
 
 ## Compile
 
@@ -14,7 +14,7 @@ This Maven project contains the initial weather application to be refactored for
 mvn compile
 ```
 
-## Run tests
+## Run test
 
 ```bash
 mvn test
