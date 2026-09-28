@@ -1,4 +1,4 @@
 package weather.model;
 
-public record Location(String city, String lat, String lon) {
+public record Location(String city, double lat, double lon) {
 }
