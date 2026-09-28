@@ -5,6 +5,7 @@ This Maven project contains the initial weather application to be refactored for
 ## Requirements
 
 - Java 25
+-  OMAR
 - Maven
 - JUnit Jupiter
 
