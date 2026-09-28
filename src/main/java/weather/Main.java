@@ -9,25 +9,21 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static java.lang.IO.println;
-
-// STARTER CODE:
-// This class intentionally contains several responsibilities.
-// Refactor it into the required model, provider, service, and CLI packages.
-record TargetLocation(String city, String lat, String lon) {}
+import weather.model.Location;
 
 public class Main {
 
     public static void main(String[] args) {
         println("🌤️ Initializing Real-Time Multi-City Weather Service...");
 
-        List<TargetLocation> locations = List.of(
-                new TargetLocation("Chicago", "41.85", "-87.65"),
-                new TargetLocation("Los Angeles", "34.05", "-118.24"),
-                new TargetLocation("New York", "40.71", "-74.01")
+        List<Location> locations = List.of(
+                new Location("Chicago", "41.85", "-87.65"),
+                new Location("Los Angeles", "34.05", "-118.24"),
+                new Location("New York", "40.71", "-74.01")
         );
 
         try (HttpClient client = HttpClient.newHttpClient()) {
-            for (TargetLocation target : locations) {
+            for (Location target : locations) {
                 String url = "https://api.open-meteo.com/v1/forecast?latitude=" + target.lat()
                         + "&longitude=" + target.lon()
                         + "&current=temperature_2m&temperature_unit=fahrenheit";
